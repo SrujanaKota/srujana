@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Flex1</title>
+    <style>
+        *{
+            background-color: pink;
+        }
+        h1{
+            text-align: center;
+        }
+     .A{
+        display: flex;
+        align-items: stretch;
+        background-color: blueviolet;
+        
+     }
+     .A>div{
+        background-color: yellow;
+        width: 100px;
+        margin: 20px;
+        padding: 10px;
+        line-height: 75px;
+        font-size: 30px;
+        text-align: center;
+     }
+
+     .AB{
+        display: flex;
+        align-items: stretch;
+        background-color: blueviolet;
+        
+     }
+     .AB>div{
+        background-color: yellow;
+        width: 100px;
+        margin: 20px;
+        padding: 10px;
+        line-height: 75px;
+        font-size: 30px;
+        text-align: center;
+     }
+
+     .ABC{
+        display: flex;
+        align-items: stretch;
+        background-color: blueviolet;
+        
+     }
+     .ABC>div{
+        background-color: yellow;
+        width: 100px;
+        margin: 20px;
+        padding: 10px;
+        line-height: 75px;
+        font-size: 30px;
+        text-align: center;
+     }
+
+     .ABCD{
+        display: flex;
+        align-items: stretch;
+        background-color: blueviolet;
+        height: 300px;
+        
+     }
+     .ABCD>div{
+        background-color: yellow;
+        width: 100px;
+        margin: 20px;
+        padding: 10px;
+        line-height: 75px;
+        font-size: 30px;
+        text-align: center;
+     }
+
+     .ABCDE{
+        display: flex;
+        align-items: stretch;
+        background-color: blueviolet;
+        height: 200px;
+        
+     }
+     .ABCDE>div{
+        background-color: yellow;
+        width: 100px;
+        margin: 20px;
+        padding: 10px;
+        line-height: 75px;
+        font-size: 30px;
+        text-align: center;
+     }
+    </style>
+</head>
+<body>
+    <h1>FLEX CHILD PROPERTIES</h1>
+    <H2>ORDER</H2>
+    <div class="A">
+        <div style="order: 3;">C</div>
+        <div style="order: 4;">O</div>
+        <div style="order: 6;">D</div>
+        <div style="order: 2;">I</div>
+        <div style="order: 1;">N</div>
+        <div style="order: 5;">G</div>
+        
+    </div>
+
+    <H2>flex grow</H2>
+    <div class="AB">
+        <div style="flex-grow: 8;">C</div>
+        <div style="flex-grow:6 ;">O</div>
+        <div style="flex-grow:4 ;">D</div>
+        <div style="flex-grow:2 ;">I</div>
+        <div style="flex: grow 1;">N</div>
+        <div  style="flex-grow:2 ;">G</div>
+       
+        
+    </div>
+
+    <H2>flex-shrink</H2>
+    <div class="ABC">
+        <div>C</div>
+        <div >O</div>
+        <div >D</div>
+        <div style="flex-shrink:0 ;">I</div>
+        <div >N</div>
+        <div >G</div>
+        <div>C</div>
+        <div >O</div>
+        <div >D</div>
+        <div >I</div>
+        <div >N</div>
+        <div >G</div>
+        
+    </div>
+
+    <H2>Flex BASIS</H2>
+    <div class="ABCDE">
+       
+        <div style="flex-basis: 400px; background-color: aqua; ">C</div>
+        <div style="flex-basis: 300px; background-color: orange; " >O</div>
+        <div style="flex-basis: 200px;background-color: pink;">D</div>
+        <div style="flex-basis: 100px;  color: rgb(240, 87, 17);" >I</div>
+        <div style="flex-basis: 50px;background-color: rgb(53, 223, 53);">N</div>
+        <div style="flex-basis: 20px;background-color: palevioletred; ">G</div>
+        
+    </div>
+</body>
+</html>
