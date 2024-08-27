@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>transforms</title>
+    <style>
+        DIV{
+            width: 100PX;
+            height: 10PX;
+            background-color: aqua;
+            border: 2PX solid black;
+           
+            float: left;
+            padding: 20px;
+            
+        }
+        .translate{
+            transform: translate(50px,120px); /*translate is nothing but it moves from the margin
+            in given x-axis and y-axis values */
+        }
+        .rotate{
+            transform: rotate(50deg);/*here we can use '-' values, for anti clock wise diections*/
+        }
+        .scale{
+            transform: scale(2,1);/*increase the size*/
+            
+           }
+
+           .skew{
+            transform: skewx(30deg);
+           }
+           .matrix{
+            transform: matrix(0.5,-0.3, 3,1,0,0);
+           }
+            
+    </style>
+</head>
+<body>
+    <h2>TRANSFORMS</h2>
+    <DIV>
+
+    </DIV>
+    <BR>
+        <h2>translate</h2>
+        <div class="translate"></div><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>rotate</h2>
+        <div class="rotate"></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>scale</h2>
+        <div class="scale"></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>skew</h2>
+        <div class="skew"></div>
+
+        <br>
+        <br>
+        <br>
+        <h2>matrix</h2>
+        <div class="matrix"></div>
+</body>
+</html>

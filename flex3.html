@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>flex3</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: yellow ;
+            margin: 10px;
+        }
+        div.main{
+            display: flex;
+            flex-direction: row;
+            padding: 0 5px;
+            
+           
+           
+        }
+        div.sub1{
+           
+            width: 250px;
+            
+            box-shadow: 20px 0px 10px 10px rgb(131, 112, 216) ;
+            text-align: center;
+            margin: 20px;
+            justify-content: space-between;
+        }
+         div.content{
+            padding: 10px;
+         }
+         
+         div.sub2{
+           
+           width: 250px;
+           
+           box-shadow: 20px 0px 10px 10px palevioletred ;
+           text-align: center;
+           margin: 20px;
+       }
+        div.content1{
+           padding: 10px;
+        }
+
+        div.sub3{
+           
+           width: 250px;
+           
+           box-shadow: 20px 0px 10px 10px orange ;
+           text-align: center;
+           margin: 20px;
+       }
+        div.content2{
+           padding: 10px;
+        }
+
+        div.sub4{
+           
+           width: 250px;
+           
+           box-shadow: 20px 0px 10px 10px violet ;
+           text-align: center;
+           margin: 20px;
+       }
+        div.content3{
+           padding: 10px;
+        }
+        
+        .sub1 img{
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+        @media(max-width:800px){
+            .sub1,.sub2{
+                flex: 50%;
+                max-width:50% ;
+            }
+        }
+        .list{
+            height:20vh ;
+            width: 30vh;
+            min-width: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: auto;
+        }
+        a{
+            position: relative;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 15px;
+            padding: 0 2px;
+
+        }
+        a::after{
+            content: " ";
+            position: absolute;
+            background-color: blueviolet;
+            height: 4px;
+            width: 0;
+            left: 0;
+            bottom: -10;
+            transition: 0.3s;
+        }
+        a:hover{
+            color: brown;
+        }
+        a:hover::before{
+            width: 100%;
+        }
+        .logo img{
+           height: 20vh;
+           margin-left: 7vh;
+        }
+        .logo{
+            align-items: center;
+            display: flex;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        .accountbotton{
+            align-items: center;
+            cursor: pointer;
+            background-color: red;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            display: flex;
+            border-radius: 30px;
+            font-size: 15px;
+            font-weight: 70;
+            padding: 0px 30px;
+            margin: 6vh 7vw;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="C:\Users\Dell\Desktop\java\hi.jpg" alt="logo">
+        </div>
+        <div class="list">
+            <a href="#">Home</a>
+            <a href="#">Places</a>
+            <a href="#">Food</a>
+            <a href="#">Tourism</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="accountbotton">Login/signup</div>
+    </nav>
+    <h1>Responsive images by using flex</h1>
+    <div class="main">
+        <div class="sub1">
+            
+            <img src="C:\Users\Dell\Desktop\java\charminar.jpg" alt="charminar" >
+            <div class="content"></div><p>charminar</p></div></div><br>
+
+            <div class="sub2">
+            <img src="C:\Users\Dell\Desktop\java\ramoji.jpg" alt="Film city" >
+            <div class="content1"></div><p>Filmcity</p></div></div><br>
+
+            
+            <div class="sub3">
+           
+                <img src="C:\Users\Dell\Desktop\java\wonderla.jpg" alt="wonderla" width="100%" >
+                <div class="content2"></div><p>wonderla</p></div></div><br>
+              
+                <div class="sub4">
+                     <img src="C:\Users\Dell\Desktop\java\zoo.jpg" alt="zoo" width="100%" >
+                     <div class="content3"></div><p>zoo</p></div></div><br>
+                    
+    </div>
+</body>
+</html>
