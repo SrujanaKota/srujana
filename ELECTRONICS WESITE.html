@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="=viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <title>AS ELECTRONICS/WEBSITE CREATION</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+         body{
+            font-family: 'poppins' , sans-serif;
+         }
+         .navbar{
+            display: flex;
+            align-items: center;
+            padding: 20px;
+         }
+         nav{
+            flex: 1;
+            text-align: right;
+         }
+         
+        .search-bar{
+            width: 100%;
+            max-width: 500px;
+            max-height: 50px;
+            background: pink;
+            display: flex;
+            border: 10px;
+            border-radius: 60px;
+            padding: 20px 20px;
+            justify-content: space-around;
+            margin-top: 40px;
+            align-items: center;
+           
+
+        }
+        .search-bar input{
+            background: transparent;
+            flex: 1;
+            border: 0;
+            outline: none;
+            padding: 20px 20px;
+            font-size: 20px;
+            
+        }
+        
+        ::placeholder{
+            color: black;
+            opacity: 0.2;
+        }
+
+        .search-bar button img{
+            width: 10px;
+        }
+
+        .search-bar button{
+            border: 0;
+            border-radius: 50%;
+            width: 60px;
+            height: 50px;
+            background: white;
+            cursor: pointer;
+        }
+        .search-bar  img:hover{
+            background-color: blue;
+            padding: 5px;
+            width: 100%;
+        }
+
+         nav ul{
+            display: inline-block;
+            list-style-type: none;
+         }
+         nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+         }
+         a{
+            text-decoration: none;
+            color: #555;
+         }
+         p{
+            color: #555;
+         }
+         .container{
+            max-width: 1300px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+         }
+         .row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+         }
+         .col-2{
+            flex-basis: 50%;
+            min-width: 300px;
+         }
+         .col-2 img{
+            
+            max-width: 50%;
+            padding: 50px 0;
+         }
+         .col-2 h1{
+            
+            line-height: 60px;
+            margin : 25px 0;
+         }
+         .btn{
+            display: inline-block;
+            background: #ff523b;
+            color: white;
+            padding: 8px 30px;
+            margin:30px 0 ;
+            border-radius: 30px;
+            transition: 0.5s;
+         }
+         .btn:hover{
+            background: brown;
+         }
+         .header{
+            background: radial-gradient(blue,violet);
+         }
+         .header .row{
+            margin-top: 70px;
+           
+         }
+         .categories{
+            margin: 70px 0;
+            margin-left: 50px;
+            margin-right: 50px;
+         }
+         .col-3{
+            flex-basis: 22%;
+            min-width: 250px;
+            margin-bottom: 30px;
+         }
+         .col-3{
+            width: 100%;
+         }
+         .small-container{
+           
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+         }
+         .col-4{
+            flex-basis: 25%;
+            padding: 10px;
+            min-width: 200px;
+            margin-bottom: 50px;
+            transition: transform 0.5s;
+         }
+         .col-4 {
+            width: 100%;
+          }
+          .title
+          {
+            text-align: center;
+            margin: 0 auto 80px;
+            position: relative;
+            line-height: 60px;
+            color: blueviolet;
+          }
+         .title::after{
+            content: '';
+            background: #ff523b;
+            width: 80px;
+            height: 5px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translatex(-50%);
+         }
+         h4{
+            color: brown;
+            font-weight: 700;
+         }
+         .col-4 p{
+            font-size: 14px;
+         }
+         .rating .fa{
+            color: yellow;
+         }
+         .col-4:hover{
+            transform: translateY(-5px);
+         }
+
+         .brands{
+            margin: 100px auto;
+         }
+        .col-5{
+            width: 160px;
+           
+        }
+        .col-5 img{
+            width: 100%;
+            cursor: pointer;
+            filter: grayscale(100%);
+        }
+        .col-5 img:hover{
+            filter: grayscale(0%); 
+        }
+
+
+        .footer{
+            background: black;
+            color: #8a8a8a;
+            font-size: 14px;
+            padding: 60px 0 20px;
+        }
+        .footer p{
+               color: #555;
+        }
+        .footer h3{
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo {
+    margin-top: 20px;
+
+}
+.app-logo img{
+width: 5px;
+
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright{
+    text-align: center;
+}
+      .menu-icon{
+        width: 28px;
+        margin-left: 20px;
+        display: none;
+      }  
+
+      @media only screen and (max-width:800px){
+        nav ul{
+            position: absolute;
+            top:93px;
+            left: 0px;
+            background: #333;
+            width: 100%;
+            overflow: hidden;
+            transition: max-height 0.5s;
+
+        }
+        nav ul li{
+            display: block;
+            margin-right: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        nav ul li a{
+            color: #fff;
+        }
+        .menu-icon{
+            display: block;
+            cursor: pointer;
+        }
+      }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+    <DIV class="navbar">
+        <div class="logo">
+            <img src="C:\Users\Dell\Desktop\java\logo1.jpg" width="125px">
+               
+        </div>
+        <form action="" class="search-bar">
+            <input type="text" placeholder="Search Anything">
+            <button type="submit"><img src="C:\Users\Dell\Desktop\java\template\search.png"></button>
+        </form>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="">Home</a> </li>
+            <li><a href="">Products</a> </li>
+            <li><a href="">About</a> </li>
+            <li><a href="">Contact</a> </li>
+            <li><a href="">Account</a> </li>
+          </ul>
+        </nav>
+        <img src="C:\Users\Dell\Downloads\shopping-cart.png" width="30px" height="30px">
+        <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\menu.png" class="menu-icon" onclick="menutoggle()">
+    </DIV>
+    <div class="row">
+        <div class="col-2">
+            <h1>Incredible Prices On all Your <br>Favourite Items...</h1>
+            <p>Get more for Less on Selected Brands.</p>
+            <a href="" class="btn">Shop Now &#8594;</a>
+    </div>
+    <div class="col-2">
+        <img src="C:\Users\Dell\Downloads\home-appliance.png" alt="goods image">
+    </div>
+    </div>
+</div>
+
+</div>
+
+
+<!--------featured Categories--------->
+
+<div class="categories">
+<div class="small-container">
+    <h2 CLASS="title">Our Products</h2>
+    <div class="row">
+        
+        <div class="col-3">
+            <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\tv1.jpg " width="180px" alt="Telivision">
+        </div>
+        <div class="col-3">
+            <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\ac2.jpg " width="180px" alt="Air conditioner">
+        </div>
+        <div class="col-3">
+            <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\laptop.jpg " width="180px"alt="laptop">
+        </div>
+        <div class="col-3">
+            
+            <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\wm1.jpg " width="180px"alt="washing machine">
+        </div>
+        
+    </div>
+    </div>
+</div>
+
+<!--------featured products--------->
+
+<div class="small-container"></div>
+<h2 CLASS="title">Featured Products</h2>
+
+<div class="row">
+    <div class="col-4">
+        <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\tv1.jpg" alt="tv" >
+        <h4>LG TV</h4>
+        <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o" ></i>
+        </div>
+        <P>35,000/-</P>
+    </div>
+
+    <div class="col-4">
+        <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\tv2.jpg" alt="tv" >
+        <h4>Samsung TV</h4>
+        <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o" ></i>
+        </div>
+        <P>1,35,000/-</P>
+    </div>
+
+
+    <div class="col-4">
+        <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\ac1.jpg" alt="ac" >
+        <h4> DELL AC</h4>
+        <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o" ></i>
+        </div>
+        <P>50,000/-</P>
+    </div>
+
+
+
+    <div class="col-4">
+        <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\ac2.jpg" alt="ac" >
+        <h4> VIVO AC</h4>
+        <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o" ></i>
+        </div>
+        <P>51,000/-</P>
+    </div>
+
+
+    <div class="col-4">
+        <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\wm1.jpg" alt="washing machine" >
+        <h4>LG washing machine</h4>
+        <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o" ></i>
+        </div>
+        <P>29,999/-</P>
+    </div>
+
+
+    <div class="col-4">
+        <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\wm2.jpg" alt="washing machine" >
+        <h4>LG Washing machine</h4>
+        <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o" ></i>
+        </div>
+        <P>46,599/-</P>
+    </div>
+
+
+    <div class="col-4">
+        <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\laptop.jpg" alt="laptop" >
+        <h4>KIA LAPTOP</h4>
+        <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o" ></i>
+        </div>
+        <P>35,000/-</P>
+    </div>
+
+
+
+    <div class="col-4">
+        <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\laptop2.jpg" alt="laptop" >
+        <h4>DELL Laptop</h4>
+        <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o" ></i>
+        </div>
+        <P>37,000/-</P>
+    </div>
+
+
+    <div class="col-4">
+        <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\phone2.jpg" alt="phone" >
+        <h4>OPPO LITE</h4>
+        <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o" ></i>
+        </div>
+        <P>99,999/-</P>
+    </div>
+
+    
+    <div class="col-4">
+        <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\oven.jpg" alt="oven" >
+        <h4>VIVO Oven</h4>
+        <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o" ></i>
+        </div>
+        <P>9,999/-</P>
+    </div>
+
+    
+    <div class="col-4">
+        <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\wp1.jpg" alt="wp" >
+        <h4>kent Water purifier</h4>
+        <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o" ></i>
+        </div>
+        <P>19,999/-</P>
+    </div>
+
+    
+    <div class="col-4">
+        <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\wp2.jpg" alt="wp" >
+        <h4>OPPO Water purifier</h4>
+        <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o" ></i>
+        </div>
+        <P>15,555/-</P>
+    </div>
+</div>
+<hr>
+<!--brands-->
+    
+<div class="brands">
+    <div class="small-container">
+        <h2 CLASS="title">Brands</h2>
+        <div class="row">
+            <div class="col-5">
+                <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\dell.jpg">
+            </div>
+            <div class="col-5">
+                <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\lg.jpg">
+            </div>
+            <div class="col-5">
+                <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\kent.jpg">
+            </div>
+            <div class="col-5">
+                <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\sam.jpg">
+            </div>
+            <div class="col-5">
+                <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\vivo3.png">
+            </div>
+           
+        </div>
+    </div>
+</div>
+<!----------------------footer-->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3><u>Download Our App</u></h3>
+                <p>Download App for Android and ios mobile phone.</u></p>
+                <div class="=app-logo">
+                    <img src="C:\Users\Dell\Desktop\ELECTRONIC SHOP\app4.png" >
+                  
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="C:\Users\Dell\Desktop\java\template\AS.png">
+                <p>A place where you can buy any electronics.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3><u>Useful Links</u></h3>
+               <ul>
+                <li>Coupons</li>
+                <li>Blog post</li>
+                <li>Return policy</li>
+                <li>Join Affiliate</li>
+               </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3><u>Follow-us</u></h3>
+               <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+                <li>Youtube</li>
+               </ul>
+            </div>
+          
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2024 - Website creation</p>
+    </div>
+</div>
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxheight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxheight = "0px")
+    {
+        MenuItems.style.maxheight = "200px";
+    }
+    else{
+        MenuItems.style.maxheight = "0px";
+    }
+    }
+</script>
+</body>
+</html>
