@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="=viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>google</title>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial,  sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-top: 12px;
+}
+nav a {
+    font-size: 13px;
+    display: inline-block;
+    line-height: 25px;
+    font-weight: 400;
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+}
+nav a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+
+}
+nav img {
+    width: 30px;
+    padding-left: 5px;
+    margin: auto 7px;
+    cursor: pointer;
+}
+nav img :hover{
+    opacity: 0.8;
+}
+nav button {
+    border : 1px solid blue;
+    font-weight: bold;
+    outline :none;
+   background: blue;
+   color: #fff;
+   padding: 7px 12px;
+   border-radius: 3px;
+   margin-left: 7px;
+   cursor: pointer;
+}
+
+
+        .navbar1{
+   
+   display: flex;
+   align-items: center;
+   padding: 20px;
+}
+.search{
+    border-color: blue;
+    border: 10px;
+    border-radius: 10px;
+
+}
+.searchbar1{
+    width: 100%;
+    max-width: 500px;
+    max-height: 50px;
+    background: white;
+    display: flex;
+    border: 10px;
+    
+    border-radius: 60px;
+    padding: 20px 20px;
+    justify-content: space-around;
+    margin-top: 40px;
+    align-items: center;
+   
+
+}
+.searchbar1 input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 20px 20px;
+    font-size: 20px;
+    
+}
+
+.section1{
+    flex: 1;
+
+}
+.section1 .logo{
+    display :block;
+    margin :0px auto;
+    margin-top: 107px;
+}
+
+.s-box{
+    width: 580px;
+    margin: 0px auto;
+    position: relative;
+    margin-top: -8px;
+    text-align: center;
+}
+.s-box .s-input{
+    display: block;
+    border: 1px solid #ddd;
+    color: rgba(0,0,0,0.87);
+    font-size: 16px;
+    padding: 13px;
+    padding-left: 45px;
+    border-radius: 25px;
+    width: 100%;
+    transition: box-shadow 100ms;
+    outline: none;
+
+}
+.s-box .s-input :hover{
+    border: 1px solid #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,0.05),
+    0 0 2px rgba(0,0,0,0.05),
+    0 0 2px rgba(0,0,0,0.05),
+    0 0 2px rgba(0,0,0,0.05),
+    0 0 2px rgba(0,0,0,0.05);
+
+}
+.s-box .search-icon{
+    width: 20px;
+    opacity: .4;
+    position:absolute;
+    top: 13px;
+    left: 14px;
+}
+.s-box .vs-icon{
+    width: 17px;
+    position: absolute;
+    top: 13px ;
+    right: 48px;
+}
+
+.s-box .image-icon{
+    width: 17px;
+    position: absolute;
+    top: 13px ;
+    right: 24px;
+}
+.s-btn{
+    border:none ;
+    padding: 9px 15px;
+    color: #666;
+    font-size: 14px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 28px;
+  margin-top: 28px;
+  outline : none;
+cursor:Pointer;
+transition: border-color 100ms;
+}
+.s-btn:hover{
+    border: 1px  solid transparent;
+    padding: 9px 15px;
+    color: #666;
+    font-size: 14px;
+    border-right:10px ;
+    margin-top: 28px;
+    outline: none;
+    cursor: pointer;
+    transition: border color 100ms;
+    
+
+}
+.s-btn:hover{
+    border: 1px solid #aaa;
+}
+
+
+
+
+
+.search{
+    width: 200px;
+    margin: 0px auto;
+    position: relative;
+    margin-top: -6px;
+    text-align: center;
+}
+.search .search1{
+    display: block;
+    border: 3px solid blue;
+    color: rgba(0,0,0,0.87);
+    font-size: 16px;
+    padding: 10px;
+    padding-left: 45px;
+    border-radius: 25px;
+    width: 1100px;
+    transition: box-shadow 100ms;
+    outline: none;
+
+}
+.search .search1 :hover{
+    border: 1px solid blue;
+    box-shadow: 0 0 2px rgba(0,0,0,0.05),
+    0 0 2px rgba(0,0,0,0.05),
+    0 0 2px rgba(0,0,0,0.05),
+    0 0 2px rgba(0,0,0,0.05),
+    0 0 2px rgba(0,0,0,0.05);
+
+}
+.search .smallg{
+    width: 20px;
+    
+    position:absolute;
+    top: 13px;
+    left: 14px;
+}
+.search .star{
+    width: 20px;
+    position: absolute;
+    top: 13px ;
+    right: -890px;
+}
+.navbar .download{
+    display: flex;
+    width: 20px;
+    position: absolute;
+    top: 13px ;
+    
+
+}
+
+
+
+    </style>
+</head>
+<body>
+  
+     <div class="navbar1">
+        <div class="arrows">
+            <img src="C:\Users\Dell\Documents\google\left-arrow.png" width="30px" cursor="pointer">
+            <img src="C:\Users\Dell\Documents\google\right-arrow.png" width="30px" cursor="pointer">
+            <img src="C:\Users\Dell\Documents\google\refresh.jpg" width="30px" cursor="pointer">
+        </div>
+        
+        <form >
+            <div class="search">
+                <img src="C:\Users\Dell\Documents\small g.png" class="smallg" width="20px">
+           
+            <input type="text" placeholder="" class="search1">
+            
+                <img src="C:\Users\Dell\Documents\star.jpg" class="star" width="20px">
+            </div>
+        </form>
+    
+    <div class="download">
+        <img src="C:\Users\Dell\Documents\google\download.jpg"  width="30px">
+        <img src="C:\Users\Dell\Documents\google\profile.png"  width="30px">
+        <img src="C:\Users\Dell\Documents\google\3-dots.png"  width="30px">
+
+    </div>
+     </div>
+
+    
+
+    <nav>
+       <a href="#">Gmail</a>
+       <a href="#">Images</a>
+       <img src="C:\Users\Dell\Documents\dots.jpg">
+       <button>Signin</button>
+    </nav>
+    <section class="section1">
+        <img src="C:\Users\Dell\Documents\google\google.png" class="logo" width="250px">
+        <form>
+            <br>
+            <br>
+            <div class="s-box">
+                <img src="C:\Users\Dell\Documents\google\search-icon.png" class="search-icon">
+                <input type="text" placeholder="Search google or type a URL" class="s-input">
+                <img src="C:\Users\Dell\Documents\google\search.png" class="vs-icon">
+                <img src="C:\Users\Dell\Documents\google\search-image.png" class="image-icon">
+                <input type="submit" class="s-btn" value="Google Search">
+
+
+            </div>
+        </form>
+       
+    </section>
+</body>
+</html>
